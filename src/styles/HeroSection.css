@@ -212,13 +212,18 @@ section {
 
 .hero-wrapper {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 2rem;
+  padding: 6rem 2rem 4rem 2rem;
   min-height: 100vh;
-  background: linear-gradient(to right, #0f0c29, #302b63);
-  flex-wrap: wrap; /* This is important for responsiveness */
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  flex-wrap: wrap;
+
+  /** ADD THIS **/
+  margin-bottom: 5rem;
 }
+
 
 .hero-left {
   flex: 1 1 400px;
