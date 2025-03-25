@@ -181,3 +181,32 @@ section {
   color: #0f0c29;
   box-shadow: 0 0 15px #00ffd5aa;
 }
+
+@media (max-width: 768px) {
+  .hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    padding: 1rem;
+  }
+
+  .hero-right {
+    margin-top: 2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+    max-width: 280px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+}
+
+
+.hero-img {
+  object-position: top center;
+}
+
