@@ -1,0 +1,121 @@
+/* === PROJECTS SECTION === */
+
+.projects-section {
+    padding: 5rem 2rem;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .projects-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    background: linear-gradient(to right, #00ffd5, #00ff95);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.8rem 1.5rem;
+    border-radius: 16px;
+    text-align: left;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 255, 213, 0.05);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 30px rgba(0, 255, 213, 0.2);
+  }
+  
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+  }
+  
+  .project-header h3 {
+    font-size: 1.3rem;
+    color: #00ffd5;
+  }
+  
+  .project-links a {
+    margin-left: 0.6rem;
+    background-color: rgba(0, 255, 213, 0.1);
+    padding: 0.3rem 0.5rem;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #00ffd5;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 1px solid #00ffd5;
+  }
+  
+  .project-links a:hover {
+    color: #0f0c29;
+    background-color: #00ffd5;
+    box-shadow: 0 0 8px #00ffd5;
+  }
+  
+  .project-desc {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 1rem;
+  }
+  
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .tag {
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .tag::before {
+    content: '#';
+  }
+  
+  .tag:nth-child(1) { background: #00bcd4; } /* ML */
+  .tag:nth-child(2) { background: #4caf50; } /* Finance */
+  .tag:nth-child(3) { background: #ff9800; } /* Deployment */
+  .tag:nth-child(4) { background: #9c27b0; } /* Research */
+  .tag:nth-child(5) { background: #f44336; } /* Clustering */
+  .tag:nth-child(6) { background: #3f51b5; } /* Library */
+  .tag:nth-child(7) { background: #e91e63; } /* Web */
+  .tag:nth-child(8) { background: #795548; } /* React */
+  .tag:nth-child(9) { background: #2196f3; } /* Firebase */
+  .tag:nth-child(10) { background: #ffc107; } /* NLP */
+  
+  @media (max-width: 600px) {
+    .projects-title {
+      font-size: 2rem;
+    }
+    .project-header h3 {
+      font-size: 1.1rem;
+    }
+    .project-desc {
+      font-size: 0.95rem;
+    }
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  

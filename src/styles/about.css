@@ -1,0 +1,117 @@
+/* === ABOUT SECTION === */
+
+.about-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #0f0c29, #302b63);
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .about-content {
+    max-width: 900px;
+    text-align: center;
+  }
+  
+  .about-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, #00ffd5, #00ff95);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .about-title .underline {
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #00ffd5;
+    margin: 0.5rem auto 0;
+    border-radius: 10px;
+  }
+  
+  .about-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #ddd;
+    text-align: center;
+  }
+  
+  .about-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 2rem;
+    align-items: center;
+  }
+  
+  .about-card {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    max-width: 600px;
+    color: #ccc;
+    transition: transform 0.3s ease;
+  }
+  
+  .about-card:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.08);
+  }
+  
+  .about-icon {
+    font-size: 1.5rem;
+    color: #00ffd5;
+  }
+  
+  .about-icon.yellow {
+    color: #f4e409;
+  }
+  
+  .about-icon.green {
+    color: #00ff95;
+  }
+  
+  @media (max-width: 768px) {
+    .about-wrapper {
+      padding: 3rem 1rem;
+    }
+  
+    .about-title {
+      font-size: 2.2rem;
+    }
+  
+    .about-text {
+      font-size: 1.1rem;
+    }
+  
+    .about-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .about-wrapper {
+    padding-top: 80px; /* or try 100px */
+    scroll-margin-top: 100px; /* this makes it visible when scrolled to */
+  }
+  
+  section {
+    scroll-margin-top: 100px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
