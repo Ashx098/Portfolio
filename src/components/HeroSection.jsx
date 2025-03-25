@@ -13,7 +13,7 @@ const HeroSection = () => {
         transition={{ duration: 1 }}
       >
         <h1 className="hero-title">
-          Hi, I’m <span className="highlight">MSR Aviansh</span>
+          Hi, I’m <span className="highlight">MSR Avinash</span>
         </h1>
         <p className="hero-subtitle">
           AI Creator • Researcher • Builder • Dreamer
