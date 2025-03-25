@@ -14,7 +14,11 @@ const About = () => {
             </h2>
 
             <p className="about-text">
-              I’m <strong>Sri Ranganadha Aviansh (MSR Aviansh)</strong>, an AI creator, researcher, and builder passionate about crafting technology that actually matters.
+              I’m <strong>Sri Ranganadha Aviansh (MSR Aviansh)</strong>, an AI creator, researcher, and builder driven by purpose. My passion lies in crafting intelligent systems that create real impact — from automating insights to simplifying lives.
+
+I thrive at the intersection of code and creativity — whether I’m building powerful ML models, mentoring budding learners, or turning ideas into working products.
+
+At the core, I believe tech should be practical, accessible, and built to empower. I’m here to build, to learn, and to leave things better than I found them.
             </p>
 
             <p className="about-text">
