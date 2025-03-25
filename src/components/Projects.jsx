@@ -8,14 +8,16 @@ const projects = [
     desc: 'Agentic AI that fetches and summarizes arXiv papers using GPT-3.5 in structured format (problem, method, results, etc).',
     tags: ['Agentic AI', 'LLM', 'arXiv'],
     github: 'https://github.com/Ashx098/ai-research-assistant',
-    live: 'https://ai-research-assistant7.streamlit.app/'
+    live: 'https://ai-research-assistant7.streamlit.app/',
+    featured: true
   },
   {
     title: 'Real-Time Stock Analyzer',
     desc: 'Fetches & predicts stock prices using Yahoo API, LSTM & NN. Deployed on Streamlit.',
     tags: ['ML', 'Finance', 'Deployment'],
-    github: '',
-    live: 'https://stock-analysis-app-77.streamlit.app/'
+    github: 'https://github.com/Ashx098/stock-analysis-app',
+    live: 'https://stock-analysis-app-77.streamlit.app/',
+    featured: true
   },
   {
     title: 'VAT Optimized (PyPI)',
@@ -35,8 +37,9 @@ const projects = [
     title: 'Task Dashboard (Trello Clone)',
     desc: 'Kanban-style task manager built in React with Firebase Auth. Responsive and smooth.',
     tags: ['Web', 'React', 'Firebase'],
-    github: '',
-    live: 'https://taskmanager-a77.web.app/'
+    github: 'https://github.com/Ashx098/idea-task-dashboard',
+    live: 'https://taskmanager-a77.web.app/',
+    featured: true
   },
   {
     title: 'BO vs BILBO Tuning',
@@ -81,7 +84,9 @@ const Projects = () => {
       <h2 className="projects-title">Projects</h2>
       <div className="projects-grid">
         {projects.map((proj, index) => (
-          <div className="project-card" key={index}>
+          <div className={`project-card ${proj.featured ? 'featured' : ''}`} key={index}>
+          {proj.featured && <div className="ribbon">FEATURED</div>}
+        
             <div className="project-header">
               <h3>{proj.title}</h3>
               <div className="project-links">
