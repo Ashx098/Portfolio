@@ -14,7 +14,7 @@ const About = () => {
             </h2>
 
             <p className="about-text">
-              I’m <strong>Mynampati Sri Ranganadha Aviansh (MSR Aviansh)</strong>, an AI creator, researcher, and builder driven by purpose. My passion lies in crafting intelligent systems that create real impact — from automating insights to simplifying lives.
+              I’m <strong>Mynampati Sri Ranganadha Avinash (MSR Avinash)</strong>, an AI creator, researcher, and builder driven by purpose. My passion lies in crafting intelligent systems that create real impact — from automating insights to simplifying lives.
 
 I thrive at the intersection of code and creativity — whether I’m building powerful ML models, mentoring budding learners, or turning ideas into working products.
 
