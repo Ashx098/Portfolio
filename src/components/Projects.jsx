@@ -4,6 +4,13 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
   {
+    title: 'AI Research Assistant',
+    desc: 'Agentic AI that fetches and summarizes arXiv papers using GPT-3.5 in structured format (problem, method, results, etc).',
+    tags: ['Agentic AI', 'LLM', 'arXiv'],
+    github: 'https://github.com/Ashx098/ai-research-assistant',
+    live: 'https://ai-research-assistant7.streamlit.app/'
+  },
+  {
     title: 'Real-Time Stock Analyzer',
     desc: 'Fetches & predicts stock prices using Yahoo API, LSTM & NN. Deployed on Streamlit.',
     tags: ['ML', 'Finance', 'Deployment'],
