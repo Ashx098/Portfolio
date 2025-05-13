@@ -1,7 +1,17 @@
 import React from 'react';
 import '../styles/skills.css';
-import { FaPython, FaJava, FaHtml5, FaCss3Alt, FaReact, FaGitAlt, FaNodeJs } from 'react-icons/fa';
-import { SiJavascript, SiMongodb, SiTailwindcss, SiPostgresql, SiNumpy, SiPandas, SiScikitlearn } from 'react-icons/si';
+
+import {
+  FaPython,
+  FaJava,
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaGitAlt,
+  FaNodeJs,
+  FaDocker,
+} from 'react-icons/fa';
+
 import {
   SiJavascript,
   SiMongodb,
@@ -20,16 +30,6 @@ import {
   SiOpenai,
 } from 'react-icons/si';
 
-import {
-  FaPython,
-  FaJava,
-  FaHtml5,
-  FaCss3Alt,
-  FaReact,
-  FaGitAlt,
-  FaNodeJs,
-  FaDocker,
-} from 'react-icons/fa';
 
 const skills = [
   { name: 'Python', icon: <FaPython /> },
