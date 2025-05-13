@@ -34,7 +34,7 @@ const HeroSection = () => {
   ))}
 
   {/* Resume Download Button */}
-  <a href="/resume.pdf" download className="hero-nav-btn resume-btn">
+  <a href="/MSR_AVINASH_ AI_Ml.pdf" download className="hero-nav-btn resume-btn">
     Download Resume
   </a>
 </div>

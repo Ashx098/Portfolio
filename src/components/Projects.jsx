@@ -4,12 +4,31 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
   {
+  title: 'Asthra Satyavaani (News AI Bot)',
+  desc: 'Telegram bot that summarizes live news from trusted sources using GROQ LLM API. Auto-summarizes, embeds images, and avoids duplicates.',
+  tags: ['LLM', 'Telegram Bot', 'News'],
+  github: 'https://github.com/Ashx098/asthra-satyavaani', 
+  live: 'https://t.me/asthra_satyavaani_bot',
+  featured: true
+},
+
+{
+  title: 'Asthra MailGuard',
+  desc: 'Hybrid ML + LLM system for smart email classification and response drafting. Privacy-first. CLI-based. Includes retraining and safe LLM fallback.',
+  tags: ['ML', 'LLM', 'Privacy'],
+  github: 'https://github.com/Ashx098/asthra-mailguard', 
+  live: ''
+  featured: true
+},
+
+
+  {
     title: 'AI Research Assistant',
     desc: 'Agentic AI that fetches and summarizes arXiv papers using GPT-3.5 in structured format (problem, method, results, etc).',
     tags: ['Agentic AI', 'LLM', 'arXiv'],
     github: 'https://github.com/Ashx098/ai-research-assistant',
     live: 'https://ai-research-assistant7.streamlit.app/',
-    featured: true
+    
   },
   {
     title: 'Real-Time Stock Analyzer',
@@ -42,12 +61,13 @@ const projects = [
     featured: true
   },
   {
-    title: 'BO vs BILBO Tuning',
-    desc: 'Compared BILBO & Bayesian Optimization for hyperparameter tuning in ML models.',
-    tags: ['Research', 'ML', 'Optimization'],
-    github: '',
-    live: ''
-  },
+  title: 'BRAGS: Hybrid HPO Framework',
+  desc: 'Novel framework combining grid, random, and bi-level optimization (BILBO) for hyperparameter tuning. Published as PyPI-ready library.',
+  tags: ['ML', 'Optimization', 'Research'],
+  github: 'https://github.com/Ashx098/BRAGS', 
+  live: ''
+},
+
   {
     title: 'Face Recognition System',
     desc: 'Built using DeepFace & Face Recognition for identity verification & attendance.',
@@ -56,8 +76,8 @@ const projects = [
     live: ''
   },
   {
-    title: 'Kaggle Titanic Top 200',
-    desc: 'Ranked in top 200 on Kaggle Titanic competition. Focused on model tuning & EDA.',
+    title: 'Kaggle Titanic Top 50',
+    desc: 'Ranked in top 50 on Kaggle Titanic competition. Focused on model tuning & EDA.',
     tags: ['Kaggle', 'ML', 'EDA'],
     github: 'https://github.com/Ashx098/Kaggle-Spaceship-Titanic',
     live: ''
