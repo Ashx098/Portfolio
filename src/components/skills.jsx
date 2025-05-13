@@ -6,19 +6,30 @@ import { SiJavascript, SiMongodb, SiTailwindcss, SiPostgresql, SiNumpy, SiPandas
 const skills = [
   { name: 'Python', icon: <FaPython /> },
   { name: 'Java', icon: <FaJava /> },
-  { name: 'HTML5', icon: <FaHtml5 /> },
-  { name: 'CSS3', icon: <FaCss3Alt /> },
   { name: 'JavaScript', icon: <SiJavascript /> },
   { name: 'React', icon: <FaReact /> },
   { name: 'Node.js', icon: <FaNodeJs /> },
   { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
+  { name: 'HTML5', icon: <FaHtml5 /> },
+  { name: 'CSS3', icon: <FaCss3Alt /> },
+  { name: 'FastAPI', icon: <SiFastapi /> },
+  { name: 'Streamlit', icon: <SiStreamlit /> },
   { name: 'MongoDB', icon: <SiMongodb /> },
   { name: 'PostgreSQL', icon: <SiPostgresql /> },
+  { name: 'Firebase', icon: <SiFirebase /> },
+  { name: 'Git', icon: <FaGitAlt /> },
+  { name: 'Docker', icon: <FaDocker /> },
   { name: 'NumPy', icon: <SiNumpy /> },
   { name: 'Pandas', icon: <SiPandas /> },
   { name: 'scikit-learn', icon: <SiScikitlearn /> },
-  { name: 'Git', icon: <FaGitAlt /> },
+  { name: 'PyTorch', icon: <SiPytorch /> },
+  { name: 'HuggingFace', icon: <SiHuggingface /> },
+  { name: 'LangChain', icon: <SiLangchain /> },
+  { name: 'LLama.cpp', icon: <SiCplusplus /> },
+  { name: 'OpenAI API', icon: <SiOpenai /> },
 ];
+
+
 
 const Skills = () => {
   return (

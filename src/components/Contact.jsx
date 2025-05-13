@@ -7,8 +7,8 @@ const contactItems = [
   {
     icon: <FaEnvelope />,
     label: "Email",
-    value: "avinashmynampati@gmail.com",
-    link: "mailto:avinashmynampati@gmail.com",
+    value: "aviinashh.mynampati@gmail.com",
+    link: "mailto:aviinashh.mynampati@gmail.com",
   },
   {
     icon: <FaLinkedin />,
