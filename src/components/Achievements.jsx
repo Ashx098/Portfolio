@@ -3,11 +3,18 @@ import "../styles/achievements.css";
 import { FaMedal, FaTrophy, FaStar } from "react-icons/fa";
 
 const achievements = [
+
+  {
+    icon: <FaMedal />,
+    title: "Finalist in 2 Hackathons",
+    description:
+"Selected as a top finalist in two national-level AI hackathons for building, AI-agent on Whatsapp for Farmers and innovative solutions in deepfake detection and education AI. Recognized for technical execution, real-world impact, and product viability."    
+  },
   {
     icon: <FaTrophy />,
-    title: "Kaggle Titanic Top 200",
+    title: "Kaggle Titanic Top 50",
     description:
-      "Ranked in the top 200 in the Titanic ML competition. Focused on model tuning & EDA.",
+      "Ranked in the top 50 in the Titanic ML competition. Focused on model tuning & EDA.",
     link: "https://github.com/Ashx098/Kaggle-Spaceship-Titanic"
   },
   {

@@ -17,7 +17,7 @@ const projects = [
   desc: 'Hybrid ML + LLM system for smart email classification and response drafting. Privacy-first. CLI-based. Includes retraining and safe LLM fallback.',
   tags: ['ML', 'LLM', 'Privacy'],
   github: 'https://github.com/Ashx098/asthra-mailguard', 
-  live: ''
+  live: '',
   featured: true
 },
 
