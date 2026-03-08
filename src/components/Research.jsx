@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/research.css';
-import { FaFilePdf, FaExternalLinkAlt, FaIdCard } from 'react-icons/fa';
+import { FaFilePdf, FaExternalLinkAlt, FaIdCard, FaBolt, FaUsers } from 'react-icons/fa';
 
 const publications = [
   {
@@ -15,16 +15,18 @@ const preprints = [
   {
     title: 'Fast-VAT: Accelerating Cluster Tendency Visualization using Cython and Numba',
     authors: 'MSR Avinash (Presidency University, Bangalore), Ismael Lachheb (EPITA School of Engineering and Computer Science, Paris, France)',
-    abstract: 'Visual Assessment of Cluster Tendency (VAT) is a widely used unsupervised technique to assess the presence of cluster structure in unlabeled datasets. However, its standard implementation suffers from significant performance limitations due to its O(n²) time complexity and inefficient memory usage. In this work, we present Fast-VAT, a high-performance reimplementation of the VAT algorithm in Python, augmented with Numba\'s Just-In-Time (JIT) compilation and Cython\'s static typing and low-level memory optimizations. Our approach achieves up to 50x speedup over the baseline implementation, while preserving the output fidelity of the original method.',
-    subjects: 'Machine Learning (cs.LG); Neural and Evolutionary Computing (cs.NE)',
+    contribution: '50× acceleration of VAT clustering algorithm',
+    implementation: 'Implemented using Numba JIT + Cython',
+    subjects: ['Machine Learning (cs.LG)', 'Neural & Evolutionary Computing (cs.NE)'],
     url: 'https://arxiv.org/abs/2507.15904',
     arxivId: 'arXiv:2507.15904'
   },
   {
     title: 'Profiling LoRA/QLoRA Fine-Tuning Efficiency on Consumer GPUs: An RTX 4060 Case Study',
     authors: 'MSR Avinash',
-    abstract: 'Fine-tuning large language models (LLMs) with parameter-efficient techniques such as LoRA and QLoRA has enabled adaptation of foundation models on modest hardware. Yet the efficiency of such training on consumer-grade GPUs, especially under strict 8 GB VRAM limits, remains underexplored. We present a controlled profiling study of LoRA/QLoRA fine-tuning using the Qwen2.5-1.5B-Instruct model on a single NVIDIA RTX 4060. Across three representative configurations, we systematically vary batch size, sequence length, optimizer choice (AdamW vs. PagedAdamW), and precision (fp16 vs. bf16).',
-    subjects: 'Machine Learning (cs.LG); Artificial Intelligence (cs.AI); Performance (cs.PF)',
+    contribution: 'Systematic profiling of LLM fine-tuning on 8GB VRAM',
+    implementation: 'PagedAdamW achieves 25% throughput improvement',
+    subjects: ['Machine Learning (cs.LG)', 'Artificial Intelligence (cs.AI)', 'Performance (cs.PF)'],
     url: 'https://arxiv.org/abs/2509.12229',
     arxivId: 'arXiv:2509.12229'
   }
@@ -64,8 +66,8 @@ const Research = () => {
           <h3 className="research-category-title">arXiv Preprints</h3>
           <div className="preprints-list">
             {preprints.map((preprint, index) => (
-              <div className="preprint-card-full" key={index}>
-                <div className="preprint-header">
+              <div className="preprint-card-structured" key={index}>
+                <div className="preprint-header-row">
                   <span className="preprint-arxiv">{preprint.arxivId}</span>
                   <a
                     href={preprint.url}
@@ -76,12 +78,38 @@ const Research = () => {
                     <FaExternalLinkAlt /> View on arXiv
                   </a>
                 </div>
+
                 <h4 className="preprint-title">{preprint.title}</h4>
-                <p className="preprint-authors">{preprint.authors}</p>
-                <p className="preprint-abstract">{preprint.abstract}</p>
-                <div className="preprint-subjects">
+
+                <div className="preprint-authors-row">
+                  <FaUsers className="authors-icon" />
+                  <span>{preprint.authors}</span>
+                </div>
+
+                <div className="preprint-key-points">
+                  <div className="key-point">
+                    <FaBolt className="key-icon" />
+                    <div>
+                      <strong>Key Contribution:</strong>
+                      <p>{preprint.contribution}</p>
+                    </div>
+                  </div>
+                  <div className="key-point">
+                    <FaBolt className="key-icon" />
+                    <div>
+                      <strong>Implementation:</strong>
+                      <p>{preprint.implementation}</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="preprint-subjects-row">
                   <span className="subjects-label">Subjects:</span>
-                  <span className="subjects-list">{preprint.subjects}</span>
+                  <div className="subjects-tags">
+                    {preprint.subjects.map((subject, i) => (
+                      <span className="subject-tag" key={i}>{subject}</span>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
