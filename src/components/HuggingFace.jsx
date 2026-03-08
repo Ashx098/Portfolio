@@ -1,17 +1,17 @@
 import React from 'react';
 import '../styles/huggingface.css';
 import { SiHuggingface } from 'react-icons/si';
-import { FaDatabase, FaExternalLinkAlt, FaCube } from 'react-icons/fa';
+import { FaDatabase, FaExternalLinkAlt, FaCube, FaRobot } from 'react-icons/fa';
 
 const models = [
   {
     name: 'Mini-LLM',
-    description: '80M parameter decoder-only transformer',
+    description: '80M parameter decoder-only transformer trained from scratch with RoPE, RMSNorm, SwiGLU, and KV caching',
     url: 'https://huggingface.co/Ashx098/Mini-LLM'
   },
   {
     name: 'embeddinggemma-300m-single-onnx',
-    description: 'ONNX-optimized embedding model',
+    description: 'ONNX optimized embedding model for efficient inference and production deployment',
     url: 'https://huggingface.co/Ashx098/embeddinggemma-300m-single-onnx'
   }
 ];
@@ -19,7 +19,7 @@ const models = [
 const datasets = [
   {
     name: 'Xyne-HS datasets',
-    description: 'High-quality datasets for LLM training',
+    description: 'High-quality curated datasets for LLM fine-tuning and instruction following',
     url: 'https://huggingface.co/Ashx098'
   }
 ];
@@ -44,7 +44,7 @@ const HuggingFace = () => {
         {/* Models */}
         <div className="hf-category">
           <h3 className="hf-category-title">
-            <FaCube /> Models
+            <FaRobot /> Models
           </h3>
           <div className="hf-grid">
             {models.map((model, index) => (
