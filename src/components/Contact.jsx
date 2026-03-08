@@ -1,14 +1,14 @@
 import React from "react";
 import "../styles/contact.css";
-import { FaEnvelope, FaLinkedin, FaGithub, FaMapMarkerAlt } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const contactItems = [
   {
     icon: <FaEnvelope />,
     label: "Email",
-    value: "aviinashh.mynampati@gmail.com",
-    link: "mailto:aviinashh.mynampati@gmail.com",
+    value: "avinash@asthralabs.com",
+    link: "mailto:avinash@asthralabs.com",
   },
   {
     icon: <FaLinkedin />,
@@ -21,12 +21,6 @@ const contactItems = [
     label: "GitHub",
     value: "github.com/Ashx098",
     link: "https://github.com/Ashx098",
-  },
-  {
-    icon: <FaMapMarkerAlt />,
-    label: "Location",
-    value: "Bangalore, India",
-    link: null,
   },
 ];
 
