@@ -2,54 +2,65 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import '../styles/HeroSection.css';
 import profileImg from '../assets/profile_4.jpg';
+import { FiDownload } from 'react-icons/fi';
 
 const HeroSection = () => {
   return (
-    <div className="hero-wrapper">
+    <motion.section
+      className="hero-section"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      {/* Left Content */}
       <motion.div
         className="hero-left"
-        initial={{ x: -100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1 }}
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
       >
-        <h1 className="hero-title">
-          Hi, I’m <span className="highlight">MSR Avinash</span>
-        </h1>
-        <p className="hero-subtitle">
-          AI Creator • Researcher • Builder • Dreamer
+        <h1 className="hero-title">MSR Avinash</h1>
+        <p className="hero-subtitle">ML Engineer • LLM Systems • AI Research</p>
+        <p className="hero-tagline">
+          Building and studying large-scale AI systems
         </p>
 
-        {/* === Navigation Buttons (no react-scroll, native scroll) === */}
-        <div className="hero-buttons">
-  {[
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Achievements', href: '#achievements' },
-    { name: 'Contact', href: '#contact' },
-  ].map((btn, index) => (
-    <a key={index} href={btn.href} className="hero-nav-btn">
-      {btn.name}
-    </a>
-  ))}
+        {/* Navigation Buttons */}
+        <div className="hero-nav">
+          <a href="#about" className="hero-nav-btn">About</a>
+          <a href="#skills" className="hero-nav-btn">Skills</a>
+          <a href="#projects" className="hero-nav-btn">Projects</a>
+          <a href="#opensource" className="hero-nav-btn">Open Source</a>
+          <a href="#research" className="hero-nav-btn">Research</a>
+          <a href="#contact" className="hero-nav-btn">Contact</a>
+        </div>
 
-  {/* Resume Download Button */}
-  <a href="/MSR_AVINASH_ AI_Ml.pdf" download className="hero-nav-btn resume-btn">
-    Download Resume
-  </a>
-</div>
-
+        {/* Resume Button */}
+        <a
+          href="/CV/MSR_AVINASH_ AI_Ml.pdf"
+          className="hero-resume-btn"
+          download
+        >
+          <FiDownload /> Download Resume
+        </a>
       </motion.div>
 
+      {/* Right Image */}
       <motion.div
         className="hero-right"
-        initial={{ x: 100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1 }}
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, delay: 0.4 }}
       >
-        <img src={profileImg} alt="Aviansh" className="hero-img" />
+        <div className="hero-img-container">
+          <img
+            src={profileImg}
+            alt="Avinash"
+            className="hero-img"
+          />
+        </div>
       </motion.div>
-    </div>
+    </motion.section>
   );
 };
 
