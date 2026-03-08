@@ -8,6 +8,7 @@ const HeroSection = () => {
   return (
     <motion.section
       className="hero-section"
+      id="home"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -20,18 +21,27 @@ const HeroSection = () => {
         transition={{ duration: 1, delay: 0.2 }}
       >
         <h1 className="hero-title">MSR Avinash</h1>
-        <p className="hero-subtitle">ML Engineer • LLM Systems • AI Research</p>
+        
+        <div className="hero-role">
+          <span className="role-badge">Machine Learning Engineer</span>
+          <span className="role-specialty">LLM Systems & AI Research</span>
+        </div>
+        
         <p className="hero-tagline">
-          Building and studying large-scale AI systems
+          Building and studying large-scale AI systems — from transformer training to MoE routing analysis.
+        </p>
+        
+        <p className="hero-credibility">
+          ML Engineer focused on large language models, AI systems, and research in efficient model training and MoE architectures.
         </p>
 
         {/* Navigation Buttons */}
         <div className="hero-nav">
           <a href="#about" className="hero-nav-btn">About</a>
-          <a href="#skills" className="hero-nav-btn">Skills</a>
+          <a href="#experience" className="hero-nav-btn">Experience</a>
+          <a href="#research" className="hero-nav-btn">Research</a>
           <a href="#projects" className="hero-nav-btn">Projects</a>
           <a href="#opensource" className="hero-nav-btn">Open Source</a>
-          <a href="#research" className="hero-nav-btn">Research</a>
           <a href="#contact" className="hero-nav-btn">Contact</a>
         </div>
 
