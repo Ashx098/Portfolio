@@ -28,11 +28,9 @@ const HeroSection = () => {
         </div>
         
         <p className="hero-tagline">
-          Building and studying large-scale AI systems — from transformer training to MoE routing analysis.
-        </p>
-        
-        <p className="hero-credibility">
-          ML Engineer focused on large language models, AI systems, and research in efficient model training and MoE architectures.
+          Building production-scale AI systems.
+          Training transformers, analyzing MoE architectures,
+          and developing infrastructure for efficient LLM deployment.
         </p>
 
         {/* Navigation Buttons */}
