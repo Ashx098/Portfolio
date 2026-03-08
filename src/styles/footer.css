@@ -1,4 +1,4 @@
-/* === FOOTER === */
+/* === footer SECTION - CLEAN DARK === */
 * {
   margin: 0;
   padding: 0;
@@ -7,96 +7,79 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-.footer {
+.footer-section {
   width: 100vw;
-  padding: 3rem 2rem 2rem;
-  background: linear-gradient(180deg, #0a0a0f 0%, #050508 100%);
-  border-top: 1px solid rgba(0, 212, 255, 0.1);
+  padding: 5rem 2rem;
+  background: #0a0a14;
+  color: #ffffff;
   font-family: 'Inter', sans-serif;
 }
 
-.footer-content {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.footer-brand {
-  margin-bottom: 1.5rem;
-}
-
-.footer-brand h3 {
-  font-size: 1.5rem;
+.footer-title {
+  font-size: 2.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0.5rem;
-}
-
-.footer-brand p {
-  font-size: 1rem;
-  color: #8888a0;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+  color: #ffffff;
   margin-bottom: 2rem;
 }
 
-.footer-link {
-  width: 45px;
-  height: 45px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(0, 212, 255, 0.15);
+/* Cards */
+.footer-card, .research-card, .contribution-card, .preprint-card-structured, 
+.experiment-card, .experience-card, .contact-item, .hf-card, .org-card {
+  background: #1a1a28;
+  border: 1px solid #2a2a3a;
   border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #00d4ff;
-  font-size: 1.25rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.25s ease;
+}
+
+.footer-card:hover, .research-card:hover, .contribution-card:hover,
+.preprint-card-structured:hover, .experiment-card:hover, .experience-card:hover,
+.contact-item:hover, .hf-card:hover, .org-card:hover {
+  background: #202030;
+  border-color: #3a3a4a;
+}
+
+/* Text colors */
+h3, h4 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+p, .project-desc, .research-venue, .contribution-desc, .preprint-authors,
+.experiment-card p, .experience-description, .contact-item p {
+  color: #a0a0b0;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: #ffffff;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: opacity 0.25s ease;
 }
 
-.footer-link:hover {
-  background: rgba(0, 212, 255, 0.1);
-  border-color: rgba(0, 212, 255, 0.3);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.15);
-  color: #fff;
+a:hover {
+  opacity: 0.7;
 }
 
-.footer-bottom {
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+/* Tags */
+.tag, .metric-tag, .experiment-tag, .subject-tag, .repo-tag {
+  background: #252535;
+  color: #9090a0;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0.2rem;
 }
 
-.footer-bottom p {
-  font-size: 0.9rem;
-  color: #666680;
-}
-
-/* Responsive */
-@media (max-width: 480px) {
-  .footer {
-    padding: 2.5rem 1.5rem 1.5rem;
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 4rem 1.5rem;
   }
 
-  .footer-brand h3 {
-    font-size: 1.3rem;
-  }
-
-  .footer-links {
-    gap: 0.75rem;
-  }
-
-  .footer-link {
-    width: 40px;
-    height: 40px;
-    font-size: 1.1rem;
+  .footer-title {
+    font-size: 2rem;
   }
 }

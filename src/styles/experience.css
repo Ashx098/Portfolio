@@ -1,4 +1,4 @@
-/* === EXPERIENCE SECTION === */
+/* === experience SECTION - CLEAN DARK === */
 * {
   margin: 0;
   padding: 0;
@@ -10,175 +10,76 @@
 .experience-section {
   width: 100vw;
   padding: 5rem 2rem;
-  background: linear-gradient(180deg, #0d0d18 0%, #121225 50%, #0a0a14 100%);
-  color: #fff;
+  background: #12121c;
+  color: #ffffff;
   font-family: 'Inter', sans-serif;
 }
 
 .experience-title {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  text-align: center;
-  margin-bottom: 3rem;
-  background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-bottom: 2rem;
 }
 
-.experience-content {
-  max-width: 800px;
-  margin: 0 auto;
+/* Cards */
+.experience-card, .research-card, .contribution-card, .preprint-card-structured, 
+.experiment-card, .experience-card, .contact-item, .hf-card, .org-card {
+  background: #1a1a28;
+  border: 1px solid #2a2a3a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.25s ease;
 }
 
-.experience-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(0, 212, 255, 0.1);
-  border-radius: 20px;
-  padding: 2.5rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+.experience-card:hover, .research-card:hover, .contribution-card:hover,
+.preprint-card-structured:hover, .experiment-card:hover, .experience-card:hover,
+.contact-item:hover, .hf-card:hover, .org-card:hover {
+  background: #202030;
+  border-color: #3a3a4a;
 }
 
-.experience-card:hover {
-  transform: translateY(-5px);
-  background: rgba(0, 212, 255, 0.05);
-  border-color: rgba(0, 212, 255, 0.25);
-  box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
-}
-
-.experience-header {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  margin-bottom: 1.5rem;
-}
-
-.experience-icon {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(0, 212, 255, 0.05));
-  border: 1px solid rgba(0, 212, 255, 0.2);
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.75rem;
-  color: #00d4ff;
-}
-
-.experience-title-group h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #e8e8ff;
-  margin-bottom: 0.35rem;
-}
-
-.experience-subtitle {
-  font-size: 1.05rem;
-  color: #00d4ff;
-  font-weight: 500;
-}
-
-.experience-description {
-  font-size: 1.15rem;
-  color: #b0b0c8;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-}
-
-.focus-areas h4 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #00d4ff;
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.focus-areas ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-
-.focus-areas li {
-  font-size: 1.05rem;
-  color: #a0a0b8;
-  padding-left: 1.5rem;
-  position: relative;
-  line-height: 1.5;
-}
-
-.focus-areas li::before {
-  content: '→';
-  position: absolute;
-  left: 0;
-  color: #00d4ff;
+/* Text colors */
+h3, h4 {
+  color: #ffffff;
   font-weight: 600;
 }
 
-/* Responsive */
+p, .project-desc, .research-venue, .contribution-desc, .preprint-authors,
+.experiment-card p, .experience-description, .contact-item p {
+  color: #a0a0b0;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.25s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* Tags */
+.tag, .metric-tag, .experiment-tag, .subject-tag, .repo-tag {
+  background: #252535;
+  color: #9090a0;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0.2rem;
+}
+
 @media (max-width: 768px) {
   .experience-section {
     padding: 4rem 1.5rem;
   }
 
   .experience-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
-
-  .experience-card {
-    padding: 2rem 1.5rem;
-  }
-
-  .experience-header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .experience-title-group h3 {
-    font-size: 1.35rem;
-  }
-
-  .experience-description {
-    font-size: 1.05rem;
-    text-align: center;
-  }
-
-  .focus-areas {
-    text-align: center;
-  }
-
-  .focus-areas li {
-    padding-left: 0;
-    padding-top: 1.5rem;
-  }
-
-  .focus-areas li::before {
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-@media (max-width: 480px) {
-  .experience-section {
-    padding: 3rem 1rem;
-  }
-
-  .experience-title {
-    font-size: 1.9rem;
-  }
-
-  .experience-icon {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-  }
-}
-
-.experience-section {
-  scroll-margin-top: 80px;
 }
