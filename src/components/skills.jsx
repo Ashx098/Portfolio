@@ -30,6 +30,16 @@ const skillCategories = [
     ]
   },
   {
+    title: 'Distributed / Training',
+    icon: <FaServer />,
+    skills: [
+      { name: 'DeepSpeed' },
+      { name: 'FSDP' },
+      { name: 'QLoRA / LoRA' },
+      { name: 'Accelerate' }
+    ]
+  },
+  {
     title: 'Systems',
     icon: <FaServer />,
     skills: [
