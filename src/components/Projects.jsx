@@ -1,25 +1,36 @@
 import React from 'react';
 import '../styles/projects.css';
-import { FaGithub, FaExternalLinkAlt, FaRocket } from 'react-icons/fa';
-import { SiHuggingface, SiGooglecolab } from 'react-icons/si';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { SiHuggingface } from 'react-icons/si';
 
 const projects = [
   {
     title: 'Mini-LLM',
-    subtitle: 'Build an 80M Parameter Language Model',
-    desc: 'Production-style implementation of a decoder-only transformer built from scratch using modern techniques such as RoPE, RMSNorm, SwiGLU and grouped-query attention. Includes full pipeline: tokenization → training → inference.',
+    subtitle: '80M Parameter Language Model from Scratch',
+    desc: 'Production-style implementation of a decoder-only transformer built from scratch using modern techniques. Includes full pipeline: tokenization → training → inference.',
+    metrics: [
+      '80M parameters',
+      '32k BPE tokenizer',
+      '361M token dataset',
+      'RoPE + RMSNorm + SwiGLU architecture',
+      'KV caching inference pipeline'
+    ],
     tags: ['PyTorch', 'Transformer Architecture', 'RoPE', 'RMSNorm', 'Flash Attention'],
     featured: true,
     links: {
       github: 'https://github.com/Ashx098/Mini-LLM',
-      huggingface: 'https://huggingface.co/Ashx098/Mini-LLM',
-      colab: null // Add if available
+      huggingface: 'https://huggingface.co/Ashx098/Mini-LLM'
     }
   },
   {
     title: 'MOE-XRAY',
     subtitle: 'Mixture-of-Experts Analysis Toolkit',
-    desc: 'Research toolkit for analyzing routing behavior in MoE language models. Provides visualization and tracing tools to understand expert activation patterns in large models.',
+    desc: 'Toolkit for tracing and analyzing expert routing behavior in Mixture-of-Experts language models, enabling inspection of expert activation patterns and routing dynamics.',
+    metrics: [
+      'Expert routing visualization',
+      'MoE token routing analysis',
+      'LLM interpretability tooling'
+    ],
     tags: ['Python', 'LLM Analysis', 'MoE Architecture', 'Visualization'],
     featured: true,
     links: {
@@ -39,7 +50,8 @@ const projects = [
   {
     title: 'Xyne-Play',
     subtitle: 'Universal CLI Tool for LLM Fine-Tuning',
-    desc: 'Universal CLI tool for LLM fine-tuning across hardware scales — from consumer GPUs to multi-node clusters. Supports SFT, DAPT, Embedding FT, Multi-GPU training, and DeepSpeed.',
+    desc: 'Universal CLI tool for LLM fine-tuning across hardware scales — from consumer GPUs to multi-node clusters.',
+    features: ['SFT', 'DAPT', 'Embedding FT', 'Multi-GPU training', 'DeepSpeed'],
     tags: ['LLM Fine-Tuning', 'DeepSpeed', 'Multi-GPU', 'SFT', 'DAPT'],
     featured: true,
     links: {
@@ -81,6 +93,27 @@ const Projects = () => {
 
               <p className="project-desc">{proj.desc}</p>
 
+              {/* Metrics */}
+              {proj.metrics && (
+                <div className="project-metrics">
+                  {proj.metrics.map((metric, i) => (
+                    <span className="metric-tag" key={i}>{metric}</span>
+                  ))}
+                </div>
+              )}
+
+              {/* Features */}
+              {proj.features && (
+                <div className="project-features">
+                  <span className="features-label">Supports:</span>
+                  <div className="features-list">
+                    {proj.features.map((feature, i) => (
+                      <span className="feature-tag" key={i}>{feature}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               <div className="project-tags">
                 {proj.tags.map((tag, i) => (
                   <span className="tag" key={i}>{tag}</span>
@@ -96,11 +129,6 @@ const Projects = () => {
                 {proj.links.huggingface && (
                   <a href={proj.links.huggingface} target="_blank" rel="noopener noreferrer" className="link-btn hf">
                     <SiHuggingface /> HuggingFace
-                  </a>
-                )}
-                {proj.links.colab && (
-                  <a href={proj.links.colab} target="_blank" rel="noopener noreferrer" className="link-btn colab">
-                    <SiGooglecolab /> Colab
                   </a>
                 )}
               </div>
