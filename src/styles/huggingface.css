@@ -27,7 +27,7 @@
 }
 
 .huggingface-title {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
   background: linear-gradient(135deg, #ff9500 0%, #ffb347 100%);
@@ -43,7 +43,7 @@
   gap: 0.5rem;
   color: #ff9500;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 500;
   transition: all 0.3s ease;
 }
@@ -66,7 +66,7 @@
 }
 
 .hf-category-title {
-  font-size: 1.2rem;
+  font-size: 1.55rem;
   font-weight: 600;
   color: #ff9500;
   margin-bottom: 1.25rem;
@@ -78,7 +78,7 @@
 }
 
 .hf-category-title svg {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 
 .hf-grid {
@@ -107,14 +107,14 @@
 }
 
 .hf-card h4 {
-  font-size: 1.2rem;
+  font-size: 1.55rem;
   font-weight: 600;
   color: #e8e8ff;
   margin-bottom: 0.5rem;
 }
 
 .hf-card p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #a8a8c0;
   margin-bottom: 1rem;
   flex: 1;
@@ -126,7 +126,7 @@
   align-items: center;
   gap: 0.5rem;
   color: #ff9500;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 500;
   transition: all 0.3s ease;
 }
@@ -169,7 +169,7 @@
   }
 
   .hf-logo {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 

@@ -32,7 +32,7 @@
 }
 
 .projects-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   color: #8888a0;
   font-weight: 400;
 }
@@ -123,14 +123,14 @@
 }
 
 .project-title-group h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: #e8e8ff;
   line-height: 1.2;
 }
 
 .project-subtitle {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: #00d4ff;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -168,6 +168,57 @@
   transform: translateY(-2px);
 }
 
+/* Metrics */
+.project-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.metric-tag {
+  background: rgba(0, 212, 255, 0.1);
+  color: #00d4ff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+/* Features */
+.project-features {
+  margin-bottom: 1rem;
+}
+
+.features-label {
+  font-size: 1rem;
+  color: #a0a0b0;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+.features-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.feature-tag {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-tag:not(:last-child)::after {
+  content: ",";
+  margin-left: 0.2rem;
+}
+
+
 /* Project Links */
 .project-links {
   display: flex;
@@ -182,7 +233,7 @@
   gap: 0.5rem;
   padding: 0.75rem 1.25rem;
   border-radius: 8px;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -245,7 +296,7 @@
   }
 
   .projects-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
   .project-card {
@@ -254,15 +305,15 @@
   }
 
   .project-title-group h3 {
-    font-size: 1.35rem;
+    font-size: 1.55rem;
   }
 
   .project-subtitle {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .project-desc {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .ribbon {
@@ -283,7 +334,7 @@
   }
 
   .project-title-group h3 {
-    font-size: 1.2rem;
+    font-size: 1.55rem;
   }
 
   .project-tags {

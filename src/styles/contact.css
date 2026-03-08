@@ -16,7 +16,7 @@
 }
 
 .contact-title {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-weight: 700;
   margin-bottom: 1rem;
   background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
@@ -27,7 +27,7 @@
 }
 
 .contact-subtext {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   color: #8888a0;
   margin-bottom: 2.5rem;
   max-width: 500px;
@@ -76,7 +76,7 @@
 
 .contact-item h4 {
   margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: #e8e8ff;
 }
@@ -105,7 +105,7 @@
   }
 
   .contact-subtext {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
   }
 
@@ -123,12 +123,12 @@
   }
 
   .contact-item h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .contact-item a,
   .contact-item p {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
   }
 }
 
@@ -156,7 +156,7 @@
 
   .contact-icon {
     margin-bottom: 0;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .contact-item > div {

@@ -25,7 +25,7 @@
 }
 
 .about-title {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-weight: 700;
   margin-bottom: 2.5rem;
   background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
@@ -48,7 +48,7 @@
 }
 
 .about-text {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   line-height: 1.9;
   margin-bottom: 1.25rem;
   color: #b0b0c8;
@@ -75,7 +75,7 @@
   display: flex;
   align-items: flex-start;
   gap: 1.25rem;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(0, 212, 255, 0.1);
   padding: 1.5rem 2rem;
@@ -95,7 +95,7 @@
 }
 
 .about-icon {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   flex-shrink: 0;
   margin-top: 0.1rem;
 }
@@ -132,17 +132,17 @@
   }
 
   .about-text {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     text-align: left;
   }
 
   .about-card {
     padding: 1.25rem 1.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .about-icon {
-    font-size: 1.35rem;
+    font-size: 1.55rem;
   }
 }
 
@@ -156,7 +156,7 @@
   }
 
   .about-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .about-card {

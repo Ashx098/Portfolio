@@ -16,7 +16,7 @@
 }
 
 .experience-title {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
@@ -68,7 +68,7 @@
 }
 
 .experience-title-group h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: #e8e8ff;
   margin-bottom: 0.35rem;
@@ -81,14 +81,14 @@
 }
 
 .experience-description {
-  font-size: 1.15rem;
+  font-size: 1.7rem;
   color: #b0b0c8;
   line-height: 1.7;
   margin-bottom: 1.5rem;
 }
 
 .focus-areas h4 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #00d4ff;
   margin-bottom: 0.75rem;
@@ -139,7 +139,7 @@
   }
 
   .experience-title-group h3 {
-    font-size: 1.35rem;
+    font-size: 1.55rem;
   }
 
   .experience-description {
@@ -175,7 +175,7 @@
   .experience-icon {
     width: 50px;
     height: 50px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 
