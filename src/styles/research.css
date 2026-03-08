@@ -1,4 +1,4 @@
-/* === research SECTION - CLEAN DARK === */
+/* === RESEARCH SECTION - PROFESSIONAL === */
 * {
   margin: 0;
   padding: 0;
@@ -8,78 +8,328 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 .research-section {
-  width: 100vw;
   padding: 5rem 2rem;
-  background: #0f0f1a;
-  color: #ffffff;
+  background: linear-gradient(180deg, #1a1a3e 0%, #0d0d1a 100%);
+  color: #fff;
   font-family: 'Inter', sans-serif;
 }
 
 .research-title {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
 }
 
-/* Cards */
-.research-card, .research-card, .contribution-card, .preprint-card-structured, 
-.experiment-card, .experience-card, .contact-item, .hf-card, .org-card {
-  background: #1a1a28;
-  border: 1px solid #2a2a3a;
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin-bottom: 1rem;
-  transition: all 0.25s ease;
+.research-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
-.research-card:hover, .research-card:hover, .contribution-card:hover,
-.preprint-card-structured:hover, .experiment-card:hover, .experience-card:hover,
-.contact-item:hover, .hf-card:hover, .org-card:hover {
-  background: #202030;
-  border-color: #3a3a4a;
-}
-
-/* Text colors */
-h3, h4 {
-  color: #ffffff;
+/* Research Category */
+.research-category-title {
+  font-size: 1.2rem;
   font-weight: 600;
+  color: #00d4ff;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
-p, .project-desc, .research-venue, .contribution-desc, .preprint-authors,
-.experiment-card p, .experience-description, .contact-item p {
-  color: #a0a0b0;
-  line-height: 1.6;
+/* Research Card */
+.research-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Links */
-a {
-  color: #ffffff;
+.research-card:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 212, 255, 0.05);
+  border-color: rgba(0, 212, 255, 0.25);
+  box-shadow: 0 15px 50px rgba(0, 212, 255, 0.15);
+}
+
+.research-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.research-icon {
+  color: #ff6b6b;
+  font-size: 1.5rem;
+}
+
+.research-type {
+  background: rgba(255, 107, 107, 0.15);
+  color: #ff6b6b;
+  padding: 0.4rem 0.85rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.research-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+  color: #e8e8ff;
+}
+
+.research-venue {
+  color: #8888a0;
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+}
+
+.research-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #00d4ff;
   text-decoration: none;
-  transition: opacity 0.25s ease;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
-a:hover {
-  opacity: 0.7;
+.research-link:hover {
+  color: #00e5ff;
+  gap: 0.75rem;
 }
 
-/* Tags */
-.tag, .metric-tag, .experiment-tag, .subject-tag, .repo-tag {
-  background: #252535;
-  color: #9090a0;
+/* Preprints List */
+.preprints-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.preprint-card-full {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.preprint-card-full:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 212, 255, 0.05);
+  border-color: rgba(0, 212, 255, 0.25);
+  box-shadow: 0 15px 50px rgba(0, 212, 255, 0.15);
+}
+
+.preprint-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.preprint-arxiv {
+  font-family: 'SF Mono', monospace;
+  font-size: 0.95rem;
+  color: #00d4ff;
+  background: rgba(0, 212, 255, 0.1);
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+}
+
+.preprint-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #00d4ff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.preprint-link:hover {
+  color: #00e5ff;
+  gap: 0.75rem;
+}
+
+.preprint-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #e8e8ff;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.preprint-authors {
+  font-size: 1rem;
+  color: #8888a0;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.preprint-abstract {
+  font-size: 1rem;
+  color: #b8b8d0;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.preprint-subjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.subjects-label {
+  font-size: 0.9rem;
+  color: #00d4ff;
+  font-weight: 500;
+}
+
+.subjects-list {
+  font-size: 0.9rem;
+  color: #8888a0;
+}
+
+/* ORCID Card */
+.orcid-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(166, 206, 57, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: #e8e8ff;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  max-width: 500px;
+}
+
+.orcid-card:hover {
+  transform: translateY(-3px);
+  background: rgba(166, 206, 57, 0.05);
+  border-color: rgba(166, 206, 57, 0.5);
+  box-shadow: 0 10px 30px rgba(166, 206, 57, 0.1);
+}
+
+.orcid-icon {
+  color: #a6ce39;
+  font-size: 2rem;
+}
+
+.orcid-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.orcid-label {
   font-size: 0.85rem;
-  padding: 0.3rem 0.7rem;
-  border-radius: 4px;
-  display: inline-block;
-  margin: 0.2rem;
+  color: #8888a0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
 }
 
+.orcid-id {
+  font-family: 'SF Mono', monospace;
+  font-size: 1.1rem;
+  color: #e8e8ff;
+}
+
+.orcid-link-icon {
+  color: #a6ce39;
+  font-size: 1rem;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .research-section {
     padding: 4rem 1.5rem;
   }
 
   .research-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
+
+  .research-card,
+  .preprint-card-full {
+    padding: 1.5rem;
+  }
+
+  .research-card-title,
+  .preprint-title {
+    font-size: 1.15rem;
+  }
+
+  .preprint-abstract {
+    font-size: 0.95rem;
+  }
+
+  .preprint-authors {
+    font-size: 0.95rem;
+  }
+
+  .research-venue {
+    font-size: 1rem;
+  }
+
+  .preprint-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .research-section {
+    padding: 3rem 1rem;
+  }
+
+  .research-title {
+    font-size: 1.9rem;
+  }
+
+  .research-content {
+    gap: 2rem;
+  }
+
+  .orcid-card {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .orcid-icon {
+    font-size: 1.75rem;
+  }
+
+  .orcid-id {
+    font-size: 1rem;
+  }
+}
+
+/* Scroll margin */
+.research-section {
+  scroll-margin-top: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
 }

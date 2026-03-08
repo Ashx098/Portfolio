@@ -1,4 +1,4 @@
-/* === experiments SECTION - CLEAN DARK === */
+/* === EXPERIMENTS SECTION === */
 * {
   margin: 0;
   padding: 0;
@@ -10,76 +10,135 @@
 .experiments-section {
   width: 100vw;
   padding: 5rem 2rem;
-  background: #0f0f1a;
-  color: #ffffff;
+  background: linear-gradient(180deg, #0a0a14 0%, #0d0d1a 100%);
+  color: #fff;
   font-family: 'Inter', sans-serif;
 }
 
 .experiments-title {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
 }
 
-/* Cards */
-.experiments-card, .research-card, .contribution-card, .preprint-card-structured, 
-.experiment-card, .experience-card, .contact-item, .hf-card, .org-card {
-  background: #1a1a28;
-  border: 1px solid #2a2a3a;
+.experiments-subtitle {
+  font-size: 1.15rem;
+  color: #8888a0;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.experiments-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.experiment-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.experiment-card:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 212, 255, 0.05);
+  border-color: rgba(0, 212, 255, 0.25);
+  box-shadow: 0 15px 40px rgba(0, 212, 255, 0.1);
+}
+
+.experiment-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(0, 212, 255, 0.05));
+  border: 1px solid rgba(0, 212, 255, 0.2);
   border-radius: 12px;
-  padding: 1.5rem;
-  margin-bottom: 1rem;
-  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #00d4ff;
+  margin-bottom: 1.25rem;
 }
 
-.experiments-card:hover, .research-card:hover, .contribution-card:hover,
-.preprint-card-structured:hover, .experiment-card:hover, .experience-card:hover,
-.contact-item:hover, .hf-card:hover, .org-card:hover {
-  background: #202030;
-  border-color: #3a3a4a;
-}
-
-/* Text colors */
-h3, h4 {
-  color: #ffffff;
+.experiment-card h3 {
+  font-size: 1.2rem;
   font-weight: 600;
+  color: #e8e8ff;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
 }
 
-p, .project-desc, .research-venue, .contribution-desc, .preprint-authors,
-.experiment-card p, .experience-description, .contact-item p {
-  color: #a0a0b0;
+.experiment-card p {
+  font-size: 1rem;
+  color: #a0a0b8;
   line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex: 1;
 }
 
-/* Links */
-a {
-  color: #ffffff;
-  text-decoration: none;
-  transition: opacity 0.25s ease;
+.experiment-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
 }
 
-a:hover {
-  opacity: 0.7;
+.experiment-tag {
+  background: rgba(0, 212, 255, 0.08);
+  color: #00d4ff;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.35rem 0.75rem;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 212, 255, 0.15);
 }
 
-/* Tags */
-.tag, .metric-tag, .experiment-tag, .subject-tag, .repo-tag {
-  background: #252535;
-  color: #9090a0;
-  font-size: 0.85rem;
-  padding: 0.3rem 0.7rem;
-  border-radius: 4px;
-  display: inline-block;
-  margin: 0.2rem;
-}
-
+/* Responsive */
 @media (max-width: 768px) {
   .experiments-section {
     padding: 4rem 1.5rem;
   }
 
   .experiments-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
+
+  .experiments-subtitle {
+    font-size: 1rem;
+  }
+
+  .experiments-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experiment-card {
+    padding: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experiments-section {
+    padding: 3rem 1rem;
+  }
+
+  .experiments-title {
+    font-size: 1.9rem;
+  }
+}
+
+.experiments-section {
+  scroll-margin-top: 80px;
 }
